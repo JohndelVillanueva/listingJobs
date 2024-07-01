@@ -5,6 +5,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\listing;
 
+// |--------------------------------------------------------------------------
+// | Web Routes
+// |--------------------------------------------------------------------------
+
 // Common Resource Routes:
 // index - Show all listings
 // show - Show a single listing
@@ -13,13 +17,6 @@ use App\Models\listing;
 // edit - Edit an existing listing
 // update - Update an existing listing
 // destroy - Delete an existing listing
-
-
-
-
-// |--------------------------------------------------------------------------
-// | Web Routes
-// |--------------------------------------------------------------------------
 
 
 //  all listing
