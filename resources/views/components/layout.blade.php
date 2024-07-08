@@ -35,13 +35,21 @@
             <ul class="flex space-x-6 mr-6 text-lg">
                 @auth
                     <li>
-                        <span class="font-bold uppercase">Welcome {{auth()->user()->name}}</span>
+                        <span class="font-bold uppercase"> {{auth()->user()->name}}</span>
                     </li>
                     <li>
                         <a href="/listings/manage" class="hover:text-laravel"
                             ><i class="fa-solid fa-gear"></i>
                             Manager Listings</a
                         >
+                    </li>
+                    <li>
+                        <form class="inline" method="POST" action="/logout">
+                        @csrf
+                            <button type="submit">
+                                <i class="fa-solid fa-door-closed"></i>Logout
+                            </button>
+                        </form>
                     </li>
                 @else
                     <li>
